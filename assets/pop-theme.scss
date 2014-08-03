@@ -38,28 +38,49 @@ code {
 /* Pop-Theme
 -------------------------------------------------- */
 
-.pop-theme {
+body.pop-theme {
 
   background-color:#003663;
+  font-size: 23px;
+
+  svg {
+
+  }
 
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
 
     li {
+      margin-top: -15px;
       color:#fff200;
       font-weight:bolder;
       background-color:rgb(0, 193, 249);
       border-radius:0 0 6px 6px;
-      box-shadow:6px 6px 0 #001835;
-      &:hover {
-        background-color:rgb(0, 193, 249);
-      }
+      box-shadow: 10px 10px 0 #001835;
+      line-height:15px;
+      position:relative;
+      padding:0 0 5px 40px;
+
       &:active {
         box-shadow:0 0 0;
       }
+
+      .apple-logo {
+        fill:#6dcff6;
+        vertical-align:middle;
+        position:absolute;
+        top:-2px;
+        left:-25px;
+      }
+
       a {
         color:#fff200;
+        margin-top:20px;
+
+        &:hover {
+          background-color:rgb(0, 193, 249);
+        }
       }
     }
 
