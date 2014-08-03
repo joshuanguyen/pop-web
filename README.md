@@ -1,5 +1,6 @@
 pop-web
 =======
+A website for a video walkie talkie for Superfriends and designed by a guy named Josh.
 
 Run the site
 ------------
