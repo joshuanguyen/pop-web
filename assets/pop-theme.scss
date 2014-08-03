@@ -39,39 +39,42 @@ code {
 -------------------------------------------------- */
 
 .pop-theme {
+
   background-color:#003663;
-}
 
-.pop-theme .navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
 
-.pop-theme section {
-  height:75vh;
-  min-height:600px;
-}
+  section {
+    height:75vh;
+    min-height:600px;
 
-.pop-theme section#welcome {
-  background-color:#003663;
-  color:white;
-}
+    &#welcome {
+      background-color:#003663;
+      color:white;
+    }
 
-.pop-theme section#video {
-  background-color:white;
-  color:black;
-}
+    &#video {
+      background-color:white;
+      color:black;
+    }
 
-.pop-theme section#demo {
-  background-color:#99e2ff;
-  color:black;
-}
+    &#demo {
+      background-color:#99e2ff;
+      color:black;
+    }
 
-.pop-theme section#story {
-  background-color:white;
-  color:black;
-}
+    &#story {
+      background-color:white;
+      color:black;
+    }
 
-.pop-theme .footer {
-  background-color:#003663;
+    .footer {
+      background-color:#003663;
+    }
+    
+  }
+
 }
