@@ -43,9 +43,7 @@ body.pop-theme {
   background-color:#003663;
   font-size: 23px;
 
-  svg {
 
-  }
 
   .navbar-default {
     background-color: transparent;
@@ -57,7 +55,7 @@ body.pop-theme {
       font-weight:bolder;
       background-color:rgb(0, 193, 249);
       border-radius:0 0 6px 6px;
-      box-shadow: 10px 10px 0 #001835;
+      box-shadow: 10px 10px 0 rgba(0, 24, 53, .5);
       line-height:15px;
       position:relative;
       padding:0 0 5px 40px;
@@ -89,6 +87,17 @@ body.pop-theme {
   section {
     height:75vh;
     min-height:600px;
+    overflow:hidden;
+
+    .container {
+      margin-top:15vh;
+      text-align:center;
+
+      .lead {
+        display:inline-block;
+        vertical-align:middle;
+      }
+    }
 
     &#welcome {
       background-color:#003663;
