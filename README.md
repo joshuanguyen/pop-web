@@ -11,10 +11,10 @@ Run the site
 Deploying
 ---------
 After making changes
-`git add .`
-`git commit -m "[say something useful]"`
-`git push origin master`
-`git push origin master:gh-pages`
+   * `git add .`
+   * `git commit -m "[say something useful]"`
+   * `git push origin master`
+   * `git push origin master:gh-pages`
 
 Production
 ----------
