@@ -1,0 +1,128 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+/* line 3, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 7, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/* line 11, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+/* line 25, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body > .container {
+  width: 100%;
+}
+
+/* line 29, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 34, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+code {
+  font-size: 80%;
+}
+
+/* Pop-Theme
+-------------------------------------------------- */
+/* line 41, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme {
+  background-color: #003663;
+  font-size: 23px;
+}
+/* line 48, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+/* line 52, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme .navbar-default li {
+  margin-top: -15px;
+  color: #fff200;
+  font-weight: bolder;
+  background-color: #00c1f9;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 10px 10px 0 rgba(0, 24, 53, 0.5);
+  line-height: 15px;
+  position: relative;
+  padding: 0 0 5px 40px;
+}
+/* line 63, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme .navbar-default li:active {
+  box-shadow: 0 0 0;
+}
+/* line 67, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme .navbar-default li .apple-logo {
+  fill: #6dcff6;
+  vertical-align: middle;
+  position: absolute;
+  top: -2px;
+  left: -25px;
+}
+/* line 75, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme .navbar-default li a {
+  color: #fff200;
+  margin-top: 20px;
+}
+/* line 79, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme .navbar-default li a:hover {
+  background-color: #00c1f9;
+}
+/* line 87, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section {
+  height: 75vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+/* line 92, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section .container {
+  margin-top: 15vh;
+  text-align: center;
+}
+/* line 96, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section .container .lead {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 102, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#welcome {
+  background-color: #003663;
+  color: white;
+}
+/* line 107, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#video {
+  background-color: white;
+  color: black;
+}
+/* line 112, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo {
+  background-color: #99e2ff;
+  color: black;
+}
+/* line 117, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#story {
+  background-color: white;
+  color: black;
+}
+/* line 122, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section .footer {
+  background-color: #003663;
+}
