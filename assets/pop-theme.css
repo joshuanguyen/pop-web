@@ -109,15 +109,15 @@ body.pop-theme section .long-shadow-container {
 body.pop-theme section .long-shadow-container .long-shadow {
   z-index: 1;
   position: absolute;
-  top: 249px;
-  left: 25px;
+  top: 1443px;
+  left: -454px;
   transform: rotate(-315deg);
   -webkit-transform: rotate(-315deg);
   -moz-transform: rotate(-315deg);
   -o-transform: rotate(-315deg);
   -ms-transform: rotate(-315deg);
-  height: 234px;
-  width: 100vh;
+  height: 236px;
+  width: 4000px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0 70px;
 }
@@ -144,10 +144,10 @@ body.pop-theme section#video .container {
 }
 /* line 140, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container .long-shadow {
-  top: 229px;
-  left: -20px;
-  height: 173px;
-  width: 100vh;
+  top: 1420px;
+  left: -504px;
+  height: 176px;
+  width: 4000px;
   border-radius: 20px;
 }
 /* line 148, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
@@ -203,10 +203,10 @@ body.pop-theme section#demo {
 }
 /* line 201, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .long-shadow {
-  top: 200px;
-  left: 85px;
-  height: 274px;
-  width: 100vh;
+  top: 1393px;
+  left: -454px;
+  height: 236px;
+  width: 4000px;
 }
 /* line 208, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container {
