@@ -212,6 +212,45 @@ body.pop-theme {
 
         .row {
           height:400px;
+
+          ol {
+            margin:0;
+            padding:0;
+            counter-reset: demo-counter;
+          }
+
+          ol li {
+
+            list-style-type:none;
+            color:#405da5;
+
+            span {
+              display:inline-block;
+              padding-left:60px;
+              margin-top:-80px;
+            }
+
+            &:before {
+              content: counter(demo-counter);
+              counter-increment: demo-counter;
+              border:solid 6px;
+              border-radius:999px;
+              padding:5px 12px;
+              margin:0 20px 0 0;
+            }
+
+            &:nth-child(1):before {
+              color:#fcf900;
+            }
+
+            &:nth-child(2):before {
+              color:#ff0000;
+            }
+
+            &:nth-child(3):before {
+              color:#00aef3;
+            }
+          }
         }
       }
 

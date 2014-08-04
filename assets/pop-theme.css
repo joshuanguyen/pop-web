@@ -218,16 +218,54 @@ body.pop-theme section#demo .container {
 body.pop-theme section#demo .container .row {
   height: 400px;
 }
-/* line 219, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 216, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol {
+  margin: 0;
+  padding: 0;
+  counter-reset: demo-counter;
+}
+/* line 222, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol li {
+  list-style-type: none;
+  color: #405da5;
+}
+/* line 227, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol li span {
+  display: inline-block;
+  padding-left: 60px;
+  margin-top: -80px;
+}
+/* line 233, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol li:before {
+  content: counter(demo-counter);
+  counter-increment: demo-counter;
+  border: solid 6px;
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin: 0 20px 0 0;
+}
+/* line 242, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol li:nth-child(1):before {
+  color: #fcf900;
+}
+/* line 246, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol li:nth-child(2):before {
+  color: #ff0000;
+}
+/* line 250, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+body.pop-theme section#demo .container .row ol li:nth-child(3):before {
+  color: #00aef3;
+}
+/* line 258, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .iphone-demo-container img {
   height: 70vh;
 }
-/* line 225, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 264, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story {
   background-color: white;
   color: black;
 }
-/* line 230, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 269, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section .footer {
   position: absolute;
   bottom: 0;
