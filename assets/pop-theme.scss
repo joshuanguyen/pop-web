@@ -4,11 +4,6 @@ html {
   position: relative;
   min-height: 100%;
 }
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -55,9 +50,10 @@ body.pop-theme {
       line-height:15px;
       position:relative;
       padding:0 0 5px 40px;
+      transition:box-shadow .2s;
 
       &:active {
-        box-shadow:0 0 0;
+        box-shadow:0 0 0 rgba(0, 24, 53, .5);
       }
 
       .apple-logo {
@@ -82,7 +78,7 @@ body.pop-theme {
 
   section {
     height:75vh;
-    min-height:600px;
+    min-height:800px;
     overflow:hidden;
     position:relative;
 
@@ -159,6 +155,10 @@ body.pop-theme {
             display:inline-block;
           }
 
+          &:active .video-play-container .video-play-button-outer {
+            background-color:rgb(0, 54, 99);
+          }
+
           .video-play-container {
             position:relative;
             height:177px;
@@ -169,6 +169,7 @@ body.pop-theme {
               height:175px;
               border-radius:999px;
               background-color:rgb(0, 193, 249);
+              transition:background-color .2s;
               .video-play-button-inner {
                 width:130px;
                 height:130px;
@@ -264,18 +265,62 @@ body.pop-theme {
     &#story {
       background-color:white;
       color:black;
+
+      h2 {
+        font-size:62px;
+      }
+
+      .people {
+        text-align:left;
+
+        .person {
+          text-align:center;
+          .avatar {
+            border-radius:999px;
+            width:100px;
+            height:100px;
+            border:solid 10px;
+            margin:0 auto;
+            box-shadow: 6px 5px 1px #cccccc;
+
+            &.josh {
+              border-color:#ff0000;
+            }
+
+            &.alaric {
+              border-color:rgb(0, 174, 243);
+            }
+          }
+          p {
+            font-size:18px;
+          }
+          .name {
+            font-weight:bolder;
+            margin:10px 0 0 0;
+          }
+          .title {
+            color:rgb(204, 204, 204);
+          }
+        }
+      }
     }
 
-    .footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 40px;
-      background-color:#003663;
-      overflow:hidden;
-    }
+  }
 
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    background-color:#003663;
+    overflow:hidden;
+
+    p.copyright {
+      color:white;
+      font-size: 18px;
+      font-weight:300;
+    }
   }
 
 }
