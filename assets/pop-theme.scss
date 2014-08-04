@@ -8,14 +8,6 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
 
 
 /* Custom page CSS
@@ -99,6 +91,35 @@ body.pop-theme {
       }
     }
 
+    .long-shadow-container {
+      position:relative;
+      display:inline-block;
+      margin:0 auto;
+      width:227px;
+      height:229px;
+      .long-shadow {
+        z-index:1;
+        position: absolute;
+        top: 249px;
+        left: 25px;
+        transform: rotate(-315deg);
+        -webkit-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        -o-transform: rotate(-315deg);
+        -ms-transform: rotate(-315deg);
+        height: 234px;
+        width: 100vh;
+        background-color: rgba(0,0,0,.2);
+        border-radius:0 70px;
+      }
+      img {
+        top:0;
+        left:0;
+        position:absolute;
+        z-index:10;
+      }
+    }
+
     &#welcome {
       background-color:#003663;
       color:white;
@@ -120,7 +141,13 @@ body.pop-theme {
     }
 
     .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 40px;
       background-color:#003663;
+      overflow:hidden;
     }
 
   }
