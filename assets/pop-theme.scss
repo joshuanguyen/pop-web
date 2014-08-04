@@ -157,6 +157,10 @@ body.pop-theme {
 
           &:active .video-play-container .video-play-button-outer {
             background-color:rgb(0, 54, 99);
+
+            .video-play-button-inner {
+              background-color:rgb(255, 255, 255);
+            }
           }
 
           .video-play-container {
@@ -169,7 +173,7 @@ body.pop-theme {
               height:175px;
               border-radius:999px;
               background-color:rgb(0, 193, 249);
-              transition:background-color .2s;
+              transition:background-color .9s;
               .video-play-button-inner {
                 width:130px;
                 height:130px;
@@ -178,6 +182,7 @@ body.pop-theme {
                 position: relative;
                 top: 22px;
                 left: 22px;
+                transition:background-color .2s;
 
                 span {
                   color:#fff200;
@@ -213,6 +218,7 @@ body.pop-theme {
 
         .row {
           height:400px;
+
 
           ol {
             margin:0;
@@ -270,6 +276,18 @@ body.pop-theme {
         font-size:62px;
       }
 
+      .row {
+        margin-bottom:40px;
+
+        &:nth-child(1) .quote {
+          padding-right:100px;
+        }
+
+        &:nth-child(2) .quote {
+          padding-left:100px;
+        }
+      }
+
       .people {
         text-align:left;
 
@@ -301,6 +319,10 @@ body.pop-theme {
           .title {
             color:rgb(204, 204, 204);
           }
+        }
+
+        .quote {
+          padding-top:30px;
         }
       }
     }
