@@ -35,7 +35,11 @@ body.pop-theme {
   background-color:#003663;
   font-size: 23px;
 
-
+  h2 {
+    span.sub-header-line {
+      display:block;
+    }
+  }
 
   .navbar-default {
     background-color: transparent;
@@ -128,6 +132,50 @@ body.pop-theme {
     &#video {
       background-color:white;
       color:black;
+
+      .container {
+        margin-top:5vh;
+
+        button.video-play-container {
+          margin-top:15px;
+          background:transparent;
+          border:none;
+          position:relative;
+
+          span {
+            font-size:15px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+            font-weight:bolder;
+            margin-top:15px;
+            display:inline-block;
+          }
+
+          .video-play-button-outer {
+            width:175px;
+            height:175px;
+            border-radius:999px;
+            background-color:rgb(0, 193, 249);
+            .video-play-button-inner {
+              width:130px;
+              height:130px;
+              border-radius:999px;
+              background-color:#ff0000;
+              position: relative;
+              top: 22px;
+              left: 22px;
+
+              span {
+                color:#fff200;
+                font-size:62px;
+                position: relative;
+                top: 18px;
+                left: 6px;
+                margin-top:0;
+              }
+            }
+          }
+        }
+      }
     }
 
     &#demo {
