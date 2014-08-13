@@ -204,7 +204,7 @@ body.pop-theme section#video .container button .video-play-container .video-play
 /* line 201, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button .video-play-container .video-play-button-outer .video-play-button-inner span {
   color: #fff200;
-  font-size: 23px;
+  font-size: 64px;
   position: relative;
   top: 18px;
   left: 6px;

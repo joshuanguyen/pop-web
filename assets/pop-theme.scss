@@ -162,7 +162,7 @@ body.pop-theme {
           border:none;
 
           span {
-            font-size:15px;
+            font-size:$smaller-font-size;
             text-shadow: 1px 1px 1px rgba(0,0,0,.5);
             font-weight:bolder;
             margin-top:15px;
@@ -200,7 +200,7 @@ body.pop-theme {
 
                 span {
                   color:#fff200;
-                  font-size:$base-font-size;
+                  font-size:64px;
                   position: relative;
                   top: 18px;
                   left: 6px;
