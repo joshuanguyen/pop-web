@@ -42,10 +42,16 @@ body.pop-theme {
   a {
     &:hover {
       text-decoration:none;
+      color:rgb(252, 249, 0);
     }
 
     &.lookatme {
       color:rgb(252, 249, 0);
+
+      &:hover {
+        text-decoration:none;
+        color:rgb(247, 0, 18);
+      }
     }
   }
 
@@ -373,7 +379,7 @@ body.pop-theme {
         color:white;
 
         &:hover {
-          color:white;
+          color:rgb(252, 249, 0);
         }
 
         &:active {
@@ -386,6 +392,9 @@ body.pop-theme {
 
         &.lookatme {
           color:rgb(252, 249, 0);
+          &:hover {
+            color:rgb(247, 0, 18);
+          }
         }
       }
 
