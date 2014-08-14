@@ -28,7 +28,16 @@ code {
 $base-font-size: 23px;
 $smaller-font-size: 15px;
 
+@font-face {
+  font-family: avenir;
+  src: url(avenir.ttc);
+}
+
 body.pop-theme {
+
+  * {
+    font-family: "avenir", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
 
   a {
     &:hover {
@@ -48,6 +57,7 @@ body.pop-theme {
     span.sub-header-line {
       display:block;
     }
+    font-weight:bolder;
   }
 
   .navbar-default {
@@ -287,7 +297,7 @@ body.pop-theme {
       color:black;
 
       h2 {
-        font-size:$base-font-size;
+        font-size:64px;
       }
 
       .row {
