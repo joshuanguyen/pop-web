@@ -88,7 +88,6 @@ body.pop-theme {
 
       .apple-logo {
         fill:#6dcff6;
-        vertical-align:middle;
         position:absolute;
         top:-2px;
         left:-25px;
@@ -106,11 +105,20 @@ body.pop-theme {
 
   }
 
+  #pop-logo {
+    width:260px;
+  }
+
   section {
     height:75vh;
     min-height:800px;
     overflow:hidden;
     position:relative;
+
+    > .container {
+      max-width:1160px;
+      margin:0 auto;
+    }
 
     .container {
       margin-top:15vh;
@@ -129,10 +137,10 @@ body.pop-theme {
       width:227px;
       height:229px;
       .long-shadow {
-        z-index:1;
+        z-index: 1;
         position: absolute;
-        top: 1443px;
-        left: -454px;
+        top: 1409px;
+        left: -469px;
         transform: rotate(-315deg);
         -webkit-transform: rotate(-315deg);
         -moz-transform: rotate(-315deg);
@@ -140,14 +148,18 @@ body.pop-theme {
         -ms-transform: rotate(-315deg);
         height: 236px;
         width: 4000px;
-        background-color: rgba(0,0,0,.2);
-        border-radius:0 70px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0 109px;
       }
-      img, button, div {
+      button, div {
         top:0;
         left:0;
         position:absolute;
         z-index:10;
+      }
+      img {
+        z-index:10;
+        position:relative;
       }
     }
 
@@ -233,17 +245,22 @@ body.pop-theme {
     &#demo {
       background-color:#99e2ff;
       color:black;
+      min-height:0;
+      height:auto;
+
+      h2 {
+        margin-bottom: 75px;
+        margin-left:35px;
+      }
 
       .long-shadow {
-        top: 1393px;
-        left: -454px;
-        height: 236px;
+        top: 1403px;
+        left: -344px;
+        height: 426px;
         width: 4000px;
       }
 
       .container {
-        position:absolute;
-        bottom:0;
         text-align:left;
 
         .row {
@@ -258,22 +275,30 @@ body.pop-theme {
 
           ol li {
 
-            list-style-type:none;
-            color:#405da5;
+            list-style-type: none;
+            color: #405da5;
+            margin-bottom: 118px;
 
             span {
-              display:inline-block;
-              padding-left:60px;
-              margin-top:-80px;
+              display: inline-block;
+              padding-left: 96px;
+              margin-top: 20px;
+              font-weight: 500;
+              display:block;
+              margin-top: -30px;
+              font-size:20px;
             }
 
             &:before {
               content: counter(demo-counter);
               counter-increment: demo-counter;
-              border:solid 6px;
-              border-radius:999px;
-              padding:5px 12px;
-              margin:0 20px 0 0;
+              border: solid 8px;
+              border-radius: 999px;
+              padding: 18px 26px;
+              margin: 0 20px 0 0;
+              font-style: italic;
+              font-weight: 700;
+              font-size: 21px;
             }
 
             &:nth-child(1):before {
@@ -293,7 +318,9 @@ body.pop-theme {
 
       .iphone-demo-container {
         img {
-          height:70vh;
+          width:400px;
+          bottom: -880px;
+          position:absolute;
         }
       }
     }
