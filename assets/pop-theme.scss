@@ -110,8 +110,6 @@ body.pop-theme {
   }
 
   section {
-    height:75vh;
-    min-height:800px;
     overflow:hidden;
     position:relative;
 
@@ -166,6 +164,8 @@ body.pop-theme {
     &#welcome {
       background-color:#003663;
       color:white;
+      height:75vh;
+      min-height:800px;
     }
 
     &#video {
@@ -347,6 +347,7 @@ body.pop-theme {
 
       .people {
         text-align:left;
+        margin-bottom: 153px;
 
         .person {
           text-align:center;
@@ -359,11 +360,17 @@ body.pop-theme {
             box-shadow: 6px 5px 1px #cccccc;
 
             &.josh {
-              border-color:#ff0000;
+              background-image: url('joshavatar.png');
+              background-size: auto 108px;
+              background-position: -14px -14px;
+              border-color: #ff0000;
             }
 
             &.alaric {
-              border-color:rgb(0, 174, 243);
+              background-image: url('alaricavatar.png');
+              background-size: auto 108px;
+              background-position: -14px -14px;
+              border-color: #ff0000;
             }
           }
           p {
