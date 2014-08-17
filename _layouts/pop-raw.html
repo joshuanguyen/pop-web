@@ -48,11 +48,32 @@
       </div>
     </div>
 
+    <!-- Video Modal -->
+    <div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="videomodal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 671px;">
+          <div class="modal-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap.js"></script>
+    <script>
+    var vimeoIframe = '<iframe src="//player.vimeo.com/video/83467406?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+    $('#videomodal').on('show.bs.modal',function(e) {
+      $(e.target).find('.modal-body').html(vimeoIframe);
+    });
+
+    $('#videomodal').on('hide.bs.modal',function(e) {
+      $(e.target).find('.modal-body').html('');
+    });
+    </script>
   </body>
 </html>
