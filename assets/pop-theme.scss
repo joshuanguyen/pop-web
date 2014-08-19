@@ -5,23 +5,6 @@ html {
   min-height: 100%;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body > .container {
-  width: 100%;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
-}
-
 /* Pop-Theme
 -------------------------------------------------- */
 
@@ -31,7 +14,7 @@ $footer-font-size: 13px;
 
 @font-face {
   font-family: avenir;
-  src: url(avenir.ttc);
+  src: url('avenir.ttc');
 }
 
 body.pop-theme {
@@ -486,24 +469,32 @@ body.pop-theme {
       font-size: 20px;
       line-height:25px;
 
-      span {
+      span.sub-header-line {
         display:inline;
       }
     }
 
-    section#welcome .container {
-      margin-top: 50px;
+    section#welcome {
+      height:auto;
+      min-height:500px;
+      .container {
+        margin-top: 50px;
+      }
     }
 
-    section#video .container {
-      margin-top: 30px;
+    section#video {
+      height:auto;
+      min-height:550px;
+      .container {
+        margin-top: 30px;
 
-      .long-shadow-container .long-shadow {
-        top: 1422px;
-        left: -482px;
-        height: 176px;
-        width: 4000px;
-        border-radius: 20px;
+        .long-shadow-container .long-shadow {
+          top: 1422px;
+          left: -482px;
+          height: 176px;
+          width: 4000px;
+          border-radius: 20px;
+        }
       }
     }
 
@@ -515,6 +506,10 @@ body.pop-theme {
         margin-left:0;
         text-align:center;
         max-height:0;
+
+        h2 {
+          margin-left: 0;
+        }
 
         .row ol {
           text-align:left;
