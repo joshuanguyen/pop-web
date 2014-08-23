@@ -20,9 +20,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
 
-  <body class="pop-theme">
+  <body class="pop-theme no-js">
+
+    <script>
+    document.querySelector('body').classList.remove('no-js');
+    </script>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -66,6 +71,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap.js"></script>
     <script>
+    function debounce(fn, delay) {
+      var timer = null;
+      return function () {
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          fn.apply(context, args);
+        }, delay);
+      };
+    }
+
+
     var vimeoIframe = '<iframe src="//player.vimeo.com/video/83467406?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
         mobileWidth = 768;
     $('#videomodal').on('show.bs.modal',function(e) {
@@ -80,6 +97,52 @@
     $('#videomodal').on('hide.bs.modal',function(e) {
       $(e.target).find('.modal-body').html('');
     });
+    </script>
+
+    <script>
+
+    var sections      = document.querySelectorAll('section'),
+        body          = document.querySelector('body'),
+        sectionCache = [],
+        activeBg;
+
+    for(var i=0; sections.length > i; i++) {
+      sectionCache.push({
+        id        : sections[i].getAttribute('id'),
+        element   : sections[i],
+        class     : sections[i].getAttribute('data-focus-body-class'),
+        offsetTop : sections[i].offsetTop
+      });
+    }
+
+    //
+    // The first item starts way before 0 to make up for the clever
+    // apple scrollback behavior
+    //
+    sectionCache[0].offsetTop = -10000;
+
+    window.onscroll = debounce(function(e) {
+
+      for (var i=0; sectionCache.length > i; i++) {
+        var next = (sectionCache[i+1]) ? sectionCache[i+1].offsetTop : body.scrollHeight;
+
+        if (body.scrollTop > sectionCache[i].offsetTop && body.scrollTop < next) {
+          if (activeBg !== sectionCache[i].id) {
+
+              //clear any set class
+              for (var ii=0; sectionCache.length > ii; ii++) {
+                body.classList.remove(sectionCache[ii].class);
+              }
+
+              //Add current class
+              body.classList.add(sectionCache[i].class);
+
+              activeBg = sectionCache[i].id;
+          }
+          break;
+        }
+      }
+    }, 50);
     </script>
   </body>
 </html>

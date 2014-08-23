@@ -14,7 +14,7 @@ $footer-font-size: 13px;
 
 @font-face {
   font-family: avenir;
-  src: url('avenir.ttc');
+  src: url('Avenir.ttc');
 }
 
 body.pop-theme {
@@ -41,9 +41,31 @@ body.pop-theme {
     }
   }
 
-  background-color:#003663;
+  background-color:rgba(0, 54, 99, 1);
+  color:rgba(255, 255, 255, 1);
+  transition:background-color 1s, color 1s;
   font-size: $base-font-size;
   font-weight:bolder;
+
+  &.focus-on-welcome {
+    background-color:rgba(0, 54, 99, 1);
+    color:rgba(255, 255, 255, 1);
+  }
+
+  &.focus-on-video {
+    background-color:rgba(255,255,255, 1);
+    color:rgba(0,0,0, 1);
+  }
+
+  &.focus-on-demo {
+    background-color:rgba(153, 226, 255, 1);
+    color:rgba(255, 255, 255, 1);
+  }
+
+  &.focus-on-story {
+    background-color:rgba(255,255,255, 1);
+    color:rgba(0,0,0, 1);
+  }
 
   h1, h2, h3, h4 {
     line-height: 39px;
@@ -149,8 +171,6 @@ body.pop-theme {
     }
 
     &#welcome {
-      background-color:#003663;
-      color:white;
       height:75vh;
       min-height:800px;
       h2 {
@@ -159,11 +179,14 @@ body.pop-theme {
       .container {
         margin-top: 142px;
       }
+
+      &.no-js {
+        background-color:#003663;
+        color:white;
+      }
     }
 
     &#video {
-      background-color:white;
-      color:black;
       height:75vh;
       min-height:800px;
 
@@ -241,11 +264,14 @@ body.pop-theme {
         }
 
       }
+
+      &.no-js {
+        background-color:white;
+        color:black;
+      }
     }
 
     &#demo {
-      background-color:#99e2ff;
-      color:black;
       min-height: 800px;
       height:auto;
 
@@ -325,11 +351,14 @@ body.pop-theme {
           position:absolute;
         }
       }
+
+      &.no-js {
+        background-color:#99e2ff;
+        color:black;
+      }
     }
 
     &#story {
-      background-color:white;
-      color:black;
       margin-bottom: 100px;
 
       h2 {
@@ -396,6 +425,11 @@ body.pop-theme {
           padding-top:30px;
         }
       }
+    }
+
+    &.no-js {
+      background-color:white;
+      color:black;
     }
 
   }
