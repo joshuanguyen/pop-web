@@ -119,14 +119,16 @@
     // The first item starts way before 0 to make up for the clever
     // apple scrollback behavior
     //
-    sectionCache[0].offsetTop = -10000;
+    sectionCache[0].offsetTop = window.innerHeight;
+
+    var offset = window.innerHeight/4;
 
     window.onscroll = debounce(function(e) {
 
       for (var i=0; sectionCache.length > i; i++) {
         var next = (sectionCache[i+1]) ? sectionCache[i+1].offsetTop : body.scrollHeight;
 
-        if (body.scrollTop > sectionCache[i].offsetTop && body.scrollTop < next) {
+        if ((body.scrollTop > sectionCache[i].offsetTop-offset || body.scrollTop < 1) && body.scrollTop < (next-offset)) {
           if (activeBg !== sectionCache[i].id) {
 
               //clear any set class
