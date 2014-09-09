@@ -147,9 +147,24 @@ body.pop-theme {
     width:260px;
   }
 
+  .focal-container {
+    position:relative;
+    margin-top: 35vh;
+
+    h2 {
+      position:absolute;
+      top:-2.5em;
+      left:0;
+      right:0;
+      text-align:center;
+    }
+  }
+
   section {
     overflow:hidden;
     position:relative;
+    height:100vh;
+    min-height:800px;
 
     > .container {
       max-width:1160px;
@@ -197,14 +212,8 @@ body.pop-theme {
     }
 
     &#welcome {
-      height:75vh;
-      min-height:800px;
       h2 {
         margin-bottom: 37px;
-      }
-
-      .container {
-        margin-top: 142px;
       }
 
       &.no-js {
@@ -214,11 +223,12 @@ body.pop-theme {
     }
 
     &#video {
-      height:75vh;
-      min-height:800px;
+
+      .focal-container h2 {
+        top: -6em;
+      }
 
       .container {
-        margin-top: 50px;
 
         .long-shadow-container {
 
@@ -253,6 +263,7 @@ body.pop-theme {
 
             .video-play-button-inner {
               background-color:rgb(255, 255, 255);
+
             }
           }
 
@@ -277,13 +288,14 @@ body.pop-theme {
                 left: 22px;
                 transition:background-color .2s;
 
-                span {
-                  color:#fff200;
-                  font-size:64px;
-                  position: relative;
-                  top: 18px;
-                  left: 6px;
-                  margin-top:0;
+                span.arrow {
+                  width: 0;
+                	height: 0;
+                	border-top: 60px solid transparent;
+                	border-bottom: 60px solid transparent;
+
+                	border-left: 60px solid green;
+                  border-radius:4px;
                 }
               }
             }
@@ -300,7 +312,6 @@ body.pop-theme {
 
     &#demo {
       min-height: 800px;
-      height:auto;
 
       h2 {
         margin-bottom: 75px;
@@ -386,6 +397,7 @@ body.pop-theme {
     }
 
     &#story {
+      height:100vh;
       margin-bottom: 100px;
 
       h2 {
@@ -466,7 +478,8 @@ body.pop-theme {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 40px;
+    //height: 40px;
+    height:10vh;
     background-color:#003663;
     overflow:hidden;
     font-size: $footer-font-size;
