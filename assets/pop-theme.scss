@@ -153,10 +153,12 @@ body.pop-theme {
 
     h2 {
       position:absolute;
-      top:-2.5em;
+      top: -3.7em;
       left:0;
       right:0;
       text-align:center;
+      font-size: 47px;
+      line-height: 65px
     }
   }
 
@@ -225,7 +227,13 @@ body.pop-theme {
     &#video {
 
       .focal-container h2 {
-        top: -6em;
+        top: -3.2em;
+        line-height:40px;
+
+        .sub-header-line-subdue {
+          font-size: 29px;
+          display:block;
+        }
       }
 
       .container {
@@ -249,6 +257,16 @@ body.pop-theme {
           background:transparent;
           border:none;
           outline: none;
+
+          svg {
+            width: 140px;
+            height: 100px;
+            margin-top:13px;
+            margin-left:2px;
+            path {
+              fill:#fff200;
+            }
+          }
 
           span {
             font-size:$smaller-font-size;
@@ -288,15 +306,6 @@ body.pop-theme {
                 left: 22px;
                 transition:background-color .2s;
 
-                span.arrow {
-                  width: 0;
-                	height: 0;
-                	border-top: 60px solid transparent;
-                	border-bottom: 60px solid transparent;
-
-                	border-left: 60px solid green;
-                  border-radius:4px;
-                }
               }
             }
           }
