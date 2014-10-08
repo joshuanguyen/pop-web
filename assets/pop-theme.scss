@@ -84,7 +84,7 @@ body.pop-theme {
 
   &.focus-on-story {
     background-color:rgba(250,249,40, 1);
-    color:rgba(52,158,235, 1);
+    color:rgba(0, 174, 243, 1);
 
     .navbar-default li {
       opacity:0;
@@ -424,6 +424,10 @@ body.pop-theme {
 
     &#story {
 
+      h2 {
+        margin-bottom:40px;
+      }
+
       .container {
         height:100vh;
         min-height: 800px;
@@ -441,48 +445,21 @@ body.pop-theme {
         }
       }
 
-      .people {
-        text-align:left;
-        margin-bottom: 153px;
+      button {
+        background-color: #00aef3;
+        color: white;
+        border: solid 0px transparent;
+        border-radius: 6px;
+        box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.7);
+        padding: 29px 57px 25px 120px;
+        position: relative;
+        font-size: 35px;
 
-        .person {
-          text-align:center;
-          .avatar {
-            border-radius:999px;
-            width:100px;
-            height:100px;
-            border:solid 10px;
-            margin:0 auto;
-            box-shadow: 6px 5px 1px #cccccc;
-
-            &.josh {
-              background-image: url('joshavatar.png');
-              background-size: auto 108px;
-              background-position: -14px -14px;
-              border-color: #ff0000;
-            }
-
-            &.alaric {
-              background-image: url('alaricavatar.png');
-              background-size: auto 108px;
-              background-position: -14px -14px;
-              border-color: rgb(0, 174, 243);
-            }
-          }
-          p {
-            font-size:$smaller-font-size;
-          }
-          .name {
-            font-weight:bolder;
-            margin:10px 0 0 0;
-          }
-          .title {
-            color:rgb(204, 204, 204);
-          }
-        }
-
-        .quote {
-          padding-top:30px;
+        .apple-logo {
+          fill: #6dcff6;
+          position: absolute;
+          top: 23px;
+          left: 56px;
         }
       }
     }
@@ -562,12 +539,16 @@ body.pop-theme {
 @media (max-width: 768px) {
   body.pop-theme {
     h1, h2, h3, h4 {
-      font-size: 20px;
-      line-height:25px;
+      font-size: 36px;
+      line-height: 40px;
 
       span.sub-header-line {
         display:inline;
       }
+    }
+
+    .navbar {
+      display:none;
     }
 
     section#welcome {
@@ -575,49 +556,36 @@ body.pop-theme {
       min-height:500px;
       .container {
         margin-top: 50px;
+
+        h2 {
+          top:-5.1em;
+        }
       }
     }
 
     section#video {
       height:auto;
       min-height:550px;
+
+      .focal-container {
+        h2 {
+          line-height: 30px;
+          top: -4.5em;
+          .sub-header-line-subdue {
+            font-size: 20px;
+            font-weight:normal;
+            display:block;
+          }
+        }
+      }
+
       .container {
         margin-top: 30px;
-
-        .long-shadow-container .long-shadow {
-          top: 1422px;
-          left: -482px;
-          height: 176px;
-          width: 4000px;
-          border-radius: 20px;
-        }
       }
     }
 
     section#demo{
-      .container {
-        height:100vh;
-        min-height:800px;
-
-        h2 {
-          margin-left: 0;
-        }
-
-        .row ol {
-          text-align:left;
-
-          li {
-            margin-bottom: 65px;
-            span {
-              margin-top: -57px;
-            }
-          }
-        }
-
-        .iphone-demo {
-          display:none;
-        }
-      }
+      display:none;
     }
 
     section#story {
