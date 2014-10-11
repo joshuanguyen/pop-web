@@ -44,7 +44,15 @@ body.pop-theme {
     }
   }
 
-  background-color:rgba(173,233,252, 1);
+
+  &.view-tos {
+    background-color:rgba(255,255,255, 1);
+  }
+
+  &.view-home {
+    background-color:rgba(173,233,252, 1);
+  }
+
   color:rgba(0, 0, 0, 1);
   transition:background-color 1s, color 1s;
   font-size: $base-font-size;
@@ -513,6 +521,21 @@ body.pop-theme {
       color:black;
     }
 
+  }
+
+  section#tos {
+    max-width:800px;
+    margin:100px auto 150px auto;
+    height:auto;
+    font-weight:lighter;
+
+    h2 {
+      text-align:left;
+    }
+
+    .container {
+      text-align:left;
+    }
   }
 
   .footer {
