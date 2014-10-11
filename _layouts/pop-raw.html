@@ -83,12 +83,12 @@
     }
 
 
-    var vimeoIframe = '<iframe src="//player.vimeo.com/video/83467406?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+    var vimeoIframe = '<iframe width="639" height="510" src="//www.youtube.com/embed/gE7MQ4S6Jvc?autoplay=1" frameborder="0" allowfullscreen></iframe>',
         mobileWidth = 768;
     $('#videomodal').on('show.bs.modal',function(e) {
       if ($(window).width() < mobileWidth) {
         e.preventDefault();
-        location.href = 'http://vimeo.com/channels/staffpicks/83467406';
+        location.href = 'https://www.youtube.com/watch?v=gE7MQ4S6Jvc';
       } else {
         $(e.target).find('.modal-body').html(vimeoIframe);
       }
