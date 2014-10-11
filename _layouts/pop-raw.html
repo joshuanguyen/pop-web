@@ -127,8 +127,10 @@
 
       for (var i=0; sectionCache.length > i; i++) {
         var next = (sectionCache[i+1]) ? sectionCache[i+1].offsetTop : body.scrollHeight;
+        var top  = Math.max(parseInt(document.body.scrollTop),parseInt(document.documentElement.scrollTop));
 
-        if ((body.scrollTop > sectionCache[i].offsetTop-offset || body.scrollTop < 1) && body.scrollTop < (next-offset)) {
+        if ((top > sectionCache[i].offsetTop-offset || top < 1) && top < (next-offset)) {
+
           if (activeBg !== sectionCache[i].id) {
 
               //clear any set class
