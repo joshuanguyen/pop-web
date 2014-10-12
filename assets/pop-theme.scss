@@ -618,6 +618,10 @@ body.pop-theme {
       display:none;
     }
 
+    .focal-container {
+      margin-top: 60px;
+    }
+
     section#welcome {
       height:auto;
 
@@ -635,7 +639,7 @@ body.pop-theme {
 
       .focal-container {
         h2 {
-          line-height: 30px;
+          line-height: 24px;
           top: -4.5em;
           .sub-header-line-subdue {
             font-size: 20px;
@@ -657,8 +661,13 @@ body.pop-theme {
     section#story {
       .container {
 
-        .people .quote {
-          padding:0;
+        button {
+          width:100%;
+          padding: 29px 57px 25px 85px;
+          .apple-logo {
+            top: 23px;
+            left: 21px;
+          }
         }
 
       }
