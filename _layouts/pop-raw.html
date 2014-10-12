@@ -62,9 +62,16 @@
 
     <!-- Video Modal -->
     <div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="videomodal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: 671px;">
-          <div class="modal-body">
+      <button id="modal-close" style="background-color:transparent;border:0;outline:0;position:absolute;top:10px;left:20px;z-index:10000;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="100px" width="100px">
+          <g transform="scale(0.25)">
+          	<path style="fill:#fff200;" d="M32.4,50.6L10,27.4C5,22.4,5,15,10,10s12.4-5,17.4,0l22.4,22.4L72.2,10c5-5,13.3-5,18.2,0   c5,5,5,13.3,0,18.2L68,50.6L90.4,73c5,5,5,12.4,0,17.4s-12.4,5-17.4,0L50.6,68L28.2,90.4c-5,5-13.3,5-18.2,0c-5-5-5-13.3,0-18.2   L32.4,50.6z"/>
+          </g>
+        </svg>
+      </button>
+      <div class="modal-dialog" style="height:100%;width:100%;margin: 0 auto;background-color:black;">
+        <div class="modal-content" style="height: 100%; border-radius:0;background-color:black;">
+          <div class="modal-body" style="background-color:black;margin-top:25px;">
 
           </div>
         </div>
@@ -90,19 +97,26 @@
     }
 
 
-    var vimeoIframe = '<iframe width="639" height="510" src="//www.youtube.com/embed/gE7MQ4S6Jvc?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+    var vimeoIframe = '<iframe width="100%" height="'+(window.innerHeight-50)+'px" src="//www.youtube.com/embed/gE7MQ4S6Jvc?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',
         mobileWidth = 768;
     $('#videomodal').on('show.bs.modal',function(e) {
+      $(e.target).find('.modal-body').html(vimeoIframe);
+      /*
       if ($(window).width() < mobileWidth) {
         e.preventDefault();
         location.href = 'https://www.youtube.com/watch?v=gE7MQ4S6Jvc';
       } else {
         $(e.target).find('.modal-body').html(vimeoIframe);
       }
+      */
     });
 
     $('#videomodal').on('hide.bs.modal',function(e) {
       $(e.target).find('.modal-body').html('');
+    });
+
+    $('#modal-close').on('click', function() {
+      $("#videomodal").modal("hide");
     });
     </script>
 
