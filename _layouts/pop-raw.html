@@ -101,14 +101,6 @@
         mobileWidth = 768;
     $('#videomodal').on('show.bs.modal',function(e) {
       $(e.target).find('.modal-body').html(vimeoIframe);
-      /*
-      if ($(window).width() < mobileWidth) {
-        e.preventDefault();
-        location.href = 'https://www.youtube.com/watch?v=gE7MQ4S6Jvc';
-      } else {
-        $(e.target).find('.modal-body').html(vimeoIframe);
-      }
-      */
     });
 
     $('#videomodal').on('hide.bs.modal',function(e) {
@@ -127,6 +119,12 @@
         sectionCache = [],
         activeBg;
 
+    $(document).keydown(function(e) {
+      if(e.keyCode == 32) {
+        return false;
+      }
+    });
+
     for(var i=0; sections.length > i; i++) {
       sectionCache.push({
         id        : sections[i].getAttribute('id'),
@@ -144,10 +142,29 @@
 
     var offset = window.innerHeight/4;
 
-    $(document).ready(function() {
-      $('#welcome img').effect("bounce", { times: 1 }, 300,function() {
-        bounceDiv();
-      });
+
+    //
+    // Listen to the spacebar and make the browser do as Josh commands
+    //
+    $('body').on('keyup', function(e) {
+      if (e.type==="keyup" && e.keyCode===32) {
+        e.preventDefault();
+
+        for (var i=0; sectionCache.length > i; i++) {
+
+          if ($(window).scrollTop() < next) {
+            break;
+          }
+
+          var next = (sectionCache[i+1]) ? sectionCache[i+1].offsetTop : body.scrollHeight;
+
+        }
+
+        $(e.target).animate({
+          scrollTop: next
+        }, 2000);
+
+      }
     });
 
     window.onscroll = debounce(function(e) {
