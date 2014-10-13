@@ -245,6 +245,7 @@ body.pop-theme {
 
       img {
         -webkit-animation: bounce .75s ease-in-out;
+        z-index:1000;
       }
 
       .focal-container {
@@ -453,7 +454,7 @@ body.pop-theme {
       }
 
       .iphone-demo-container {
-        background-image: url("/assets/iphone5.svg");
+        background-image: url("iphone5.svg");
         background-size: 480px;
         background-position: -126px;
         background-repeat: no-repeat;

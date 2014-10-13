@@ -262,18 +262,19 @@ body.pop-theme section#welcome h2 {
 /* line 246, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome img {
   -webkit-animation: bounce .75s ease-in-out;
+  z-index: 1000;
 }
-/* line 250, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 251, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome .focal-container {
   position: relative;
 }
-/* line 252, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 253, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome .focal-container .logoshadow-container {
   -webkit-animation: bounce .75s ease-in-out;
   position: absolute;
   left: 50%;
 }
-/* line 256, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 257, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome .focal-container .logoshadow-container .logoshadow {
   width: 193px;
   height: 384px;
@@ -283,7 +284,7 @@ body.pop-theme section#welcome .focal-container .logoshadow-container .logoshado
   margin-left: -82px;
   top: 18px;
 }
-/* line 265, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 266, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome .focal-container .logoshadow-container .logoshadow .logoshadow-circle {
   border-radius: 999px;
   width: 100%;
@@ -292,7 +293,7 @@ body.pop-theme section#welcome .focal-container .logoshadow-container .logoshado
   margin: 0 auto;
   /*box-shadow: 1px 1px 1px #3a4d53; only if the fakey shadow needs smoothing*/
 }
-/* line 274, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 275, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome .focal-container .logoshadow-container .logoshadow .logoshadow-point {
   width: 0;
   height: 0;
@@ -306,46 +307,46 @@ body.pop-theme section#welcome .focal-container .logoshadow-container .logoshado
   -moz-transform: rotate(-13deg);
   transform: rotate(-13deg);
 }
-/* line 291, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 292, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#welcome.no-js {
   background-color: #003663;
   color: white;
 }
-/* line 299, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 300, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .focal-container h2 {
   top: -3.2em;
   line-height: 40px;
 }
-/* line 303, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 304, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .focal-container h2 .sub-header-line-subdue {
   font-size: 29px;
   display: inline;
   white-space: nowrap;
 }
-/* line 310, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 311, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container {
   height: 100vh;
   min-height: 800px;
 }
-/* line 315, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 316, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button {
   margin-top: 15px;
   background: transparent;
   border: none;
   outline: none;
 }
-/* line 322, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 323, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button svg {
   width: 140px;
   height: 100px;
   margin-top: 13px;
   margin-left: 2px;
 }
-/* line 327, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 328, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button svg path {
   fill: #fff200;
 }
-/* line 332, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 333, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button span {
   font-size: 13px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -353,21 +354,21 @@ body.pop-theme section#video .container button span {
   margin-top: 15px;
   display: inline-block;
 }
-/* line 340, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 341, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button:active .video-play-container .video-play-button-outer {
   background-color: #003663;
 }
-/* line 343, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 344, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button:active .video-play-container .video-play-button-outer .video-play-button-inner {
   background-color: white;
 }
-/* line 349, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 350, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button .video-play-container {
   position: relative;
   height: 177px;
   width: 177px;
 }
-/* line 354, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 355, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button .video-play-container .video-play-button-outer {
   width: 175px;
   height: 175px;
@@ -376,7 +377,7 @@ body.pop-theme section#video .container button .video-play-container .video-play
   transition: background-color .9s;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.6);
 }
-/* line 361, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 362, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .container button .video-play-container .video-play-button-outer .video-play-button-inner {
   width: 130px;
   height: 130px;
@@ -387,45 +388,45 @@ body.pop-theme section#video .container button .video-play-container .video-play
   left: 22px;
   transition: background-color .2s;
 }
-/* line 378, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 379, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video.no-js {
   background-color: white;
   color: black;
 }
-/* line 386, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 387, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo h2 {
   margin-bottom: 8px;
   margin-left: 35px;
 }
-/* line 391, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 392, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container {
   text-align: left;
   height: 100vh;
   min-height: 800px;
 }
-/* line 396, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 397, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .bullet-container {
   padding-top: 27px;
 }
-/* line 400, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 401, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row {
   max-width: 940px;
   margin: 0 auto;
 }
-/* line 405, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 406, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol {
   margin: 0;
   padding: 0;
   counter-reset: demo-counter;
   padding-top: 26px;
 }
-/* line 412, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 413, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li {
   list-style-type: none;
   color: #a6e9fd;
   margin-bottom: 118px;
 }
-/* line 418, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 419, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li span {
   display: inline-block;
   padding-left: 110px;
@@ -435,7 +436,7 @@ body.pop-theme section#demo .container .row ol li span {
   margin-top: -49px;
   font-size: 24px;
 }
-/* line 428, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 429, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li:before {
   content: counter(demo-counter);
   counter-increment: demo-counter;
@@ -447,21 +448,21 @@ body.pop-theme section#demo .container .row ol li:before {
   font-weight: 700;
   font-size: 21px;
 }
-/* line 440, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 441, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li:nth-child(1):before {
   color: #fcf900;
 }
-/* line 444, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 445, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li:nth-child(2):before {
   color: #ff0000;
 }
-/* line 448, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 449, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li:nth-child(3):before {
   color: #00518c;
 }
-/* line 455, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 456, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .iphone-demo-container {
-  background-image: url("/assets/iphone5.svg");
+  background-image: url("iphone5.svg");
   background-size: 480px;
   background-position: -126px;
   background-repeat: no-repeat;
@@ -473,7 +474,7 @@ body.pop-theme section#demo .iphone-demo-container {
   margin-left: auto;
   position: relative;
 }
-/* line 468, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 469, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .iphone-demo-container video {
   position: absolute;
   top: 51px;
@@ -481,33 +482,33 @@ body.pop-theme section#demo .iphone-demo-container video {
   width: 192px;
   height: 369px;
 }
-/* line 477, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 478, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo.no-js {
   background-color: #99e2ff;
   color: black;
 }
-/* line 485, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 486, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story h2 {
   margin-bottom: 40px;
 }
-/* line 489, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 490, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story .container {
   height: 100vh;
   min-height: 800px;
 }
-/* line 494, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 495, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story .row {
   margin-bottom: 40px;
 }
-/* line 497, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 498, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story .row:nth-child(1) .quote {
   padding-right: 100px;
 }
-/* line 501, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 502, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story .row:nth-child(2) .quote {
   padding-left: 100px;
 }
-/* line 506, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 507, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story button {
   background-color: #00aef3;
   color: white;
@@ -518,34 +519,34 @@ body.pop-theme section#story button {
   position: relative;
   font-size: 35px;
 }
-/* line 516, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 517, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#story button .apple-logo {
   fill: #6dcff6;
   position: absolute;
   top: 23px;
   left: 56px;
 }
-/* line 525, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 526, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section.no-js {
   background-color: white;
   color: black;
 }
-/* line 532, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 533, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#tos {
   max-width: 800px;
   margin: 100px auto 150px auto;
   height: auto;
   font-weight: lighter;
 }
-/* line 538, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 539, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#tos h2 {
   text-align: left;
 }
-/* line 542, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 543, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#tos .container {
   text-align: left;
 }
-/* line 547, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 548, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer {
   position: absolute;
   bottom: 0;
@@ -559,46 +560,46 @@ body.pop-theme .footer {
   padding: 30px 0 55px 0;
   font-weight: 600;
 }
-/* line 561, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 562, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container {
   position: relative;
 }
-/* line 565, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 566, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container a {
   color: white;
 }
-/* line 568, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 569, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container a:hover {
   color: #fcf900;
 }
-/* line 572, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 573, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container a:active {
   color: white;
 }
-/* line 576, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 577, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container a:focus {
   color: white;
 }
-/* line 580, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 581, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container a.lookatme {
   color: #fcf900;
 }
-/* line 582, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 583, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container a.lookatme:hover {
   color: #f70012;
 }
-/* line 588, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 589, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container p.copyright {
   color: white;
 }
-/* line 592, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 593, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container ul {
   display: inline-block;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 598, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+/* line 599, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme .footer .container ul li {
   display: inline;
   text-align: right;
@@ -607,93 +608,93 @@ body.pop-theme .footer .container ul li {
 }
 
 @media (max-width: 768px) {
-  /* line 614, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 615, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme h1, body.pop-theme h2, body.pop-theme h3, body.pop-theme h4 {
     font-size: 24px;
     line-height: 28px;
   }
-  /* line 618, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 619, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme h1 span.sub-header-line, body.pop-theme h2 span.sub-header-line, body.pop-theme h3 span.sub-header-line, body.pop-theme h4 span.sub-header-line {
     display: inline;
   }
-  /* line 623, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 624, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .navbar {
     display: none;
   }
-  /* line 627, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 628, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .focal-container {
     margin-top: 60px;
   }
-  /* line 632, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 633, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .modal #modal-close {
     left: -10px;
   }
-  /* line 637, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 638, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#welcome {
     height: auto;
   }
-  /* line 640, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 641, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#welcome .container {
     margin-top: 50px;
   }
-  /* line 643, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 644, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#welcome .container h2 {
     top: -5.1em;
   }
-  /* line 649, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 650, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video {
     height: auto;
   }
-  /* line 653, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 654, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video .focal-container h2 {
     line-height: 24px;
     top: -4.5em;
   }
-  /* line 656, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 657, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video .focal-container h2 .sub-header-line-subdue {
     font-size: 20px;
     font-weight: normal;
     display: block;
   }
-  /* line 664, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 665, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video .container {
     margin-top: 30px;
   }
-  /* line 667, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 668, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video .container button {
     margin-top: 25px;
   }
-  /* line 673, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 674, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#demo {
     display: none;
   }
-  /* line 680, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 681, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#story .container button {
     width: 100%;
     padding: 29px 57px 25px 85px;
   }
-  /* line 683, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 684, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#story .container button .apple-logo {
     top: 23px;
     left: 21px;
   }
-  /* line 692, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 693, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer {
     height: auto;
     text-align: center;
   }
-  /* line 695, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 696, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer p {
     margin: 0;
   }
-  /* line 699, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 700, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer .container ul {
     display: block;
     position: relative;
     margin-bottom: 0px;
     padding: 0;
   }
-  /* line 704, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  /* line 705, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer .container ul li {
     text-align: center;
     text-transform: uppercase;
