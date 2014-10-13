@@ -614,6 +614,14 @@ body.pop-theme {
 
 @media (max-width: 768px) {
   body.pop-theme {
+    section#demo{
+      display:none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body.pop-theme {
     h1, h2, h3, h4 {
       font-size: 24px;
       line-height: 28px;
@@ -671,10 +679,6 @@ body.pop-theme {
           margin-top: 25px;
         }
       }
-    }
-
-    section#demo{
-      display:none;
     }
 
     section#story {
