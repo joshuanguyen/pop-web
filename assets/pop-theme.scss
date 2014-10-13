@@ -137,7 +137,7 @@ body.pop-theme {
       line-height:15px;
       position:relative;
       padding:14px 15px 14px 76px;
-      transition:box-shadow 1s, background-color 1s, color 1s, opacity .2s;
+      transition:box-shadow .2s, background-color 1s, color 1s, opacity .2s;
 
       &:active {
         box-shadow:0 0 0 rgba(0, 24, 53, .5);
@@ -157,8 +157,13 @@ body.pop-theme {
         transition:color 1s;
 
         &:hover {
-          background-color:rgb(0, 193, 249);
+          background-color:transparent;
         }
+
+      }
+
+      &:hover {
+        background-color:rgb(0, 193, 249);
       }
     }
 
@@ -166,6 +171,7 @@ body.pop-theme {
 
   #pop-logo {
     width:260px;
+    cursor:pointer;
   }
 
   .focal-container {
