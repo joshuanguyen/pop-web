@@ -15,6 +15,13 @@ $footer-font-size: 13px;
 $shadow-size:10px;
 $shadow-opacity:.6;
 
+@-webkit-keyframes bounce {
+  0% { opacity: 0; -webkit-transform: translateY(-800px); }
+  60% { opacity: 1; -webkit-transform: translateY(25px); }
+  80% { -webkit-transform: translateY(-8px); opacity: .8; }
+  100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
 @font-face {
   font-family: avenir;
   src: url('Avenir.ttc');
@@ -236,9 +243,14 @@ body.pop-theme {
         margin-bottom: 37px;
       }
 
+      img {
+        -webkit-animation: bounce .75s ease-in-out;
+      }
+
       .focal-container {
         position:relative;
         .logoshadow-container {
+          -webkit-animation: bounce .75s ease-in-out;
           position:absolute;
           left:50%;
           .logoshadow {
@@ -290,7 +302,8 @@ body.pop-theme {
 
         .sub-header-line-subdue {
           font-size: 29px;
-          display:block;
+          display:inline;
+          white-space:nowrap;
         }
       }
 
@@ -298,19 +311,6 @@ body.pop-theme {
 
         height:100vh;
         min-height:800px;
-
-        .long-shadow-container {
-
-            margin-left:-200px;
-
-            .long-shadow {
-              top: 1420px;
-              left: -504px;
-              height: 176px;
-              width: 4000px;
-              border-radius:20px;
-            }
-        }
 
         button {
 
@@ -663,6 +663,10 @@ body.pop-theme {
 
       .container {
         margin-top: 30px;
+
+        button {
+          margin-top: 25px;
+        }
       }
     }
 

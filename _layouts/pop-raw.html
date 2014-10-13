@@ -144,6 +144,12 @@
 
     var offset = window.innerHeight/4;
 
+    $(document).ready(function() {
+      $('#welcome img').effect("bounce", { times: 1 }, 300,function() {
+        bounceDiv();
+      });
+    });
+
     window.onscroll = debounce(function(e) {
 
       for (var i=0; sectionCache.length > i; i++) {
