@@ -473,12 +473,12 @@ body.pop-theme {
         margin-left:auto;
         position:relative;
 
-        video {
+        img {
           position: absolute;
-          top: 51px;
+          top: 62px;
           left: 18px;
           width: 192px;
-          height: 369px;
+          height: 345px;
         }
       }
 
@@ -618,7 +618,7 @@ body.pop-theme {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 989px) {
   body.pop-theme {
     section#demo{
       display:none;

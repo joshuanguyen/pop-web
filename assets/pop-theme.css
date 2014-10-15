@@ -481,12 +481,12 @@ body.pop-theme section#demo .iphone-demo-container {
   position: relative;
 }
 /* line 476, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
-body.pop-theme section#demo .iphone-demo-container video {
+body.pop-theme section#demo .iphone-demo-container img {
   position: absolute;
-  top: 51px;
+  top: 62px;
   left: 18px;
   width: 192px;
-  height: 369px;
+  height: 345px;
 }
 /* line 485, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo.no-js {
@@ -614,7 +614,7 @@ body.pop-theme .footer .container ul li {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 989px) {
   /* line 623, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#demo {
     display: none;
