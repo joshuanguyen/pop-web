@@ -21,11 +21,12 @@ $shadow-opacity:.6;
   80% { -webkit-transform: translateY(-8px); opacity: .8; }
   100% { -webkit-transform: translateY(0); opacity: 1; }
 }
-
+/*
 @font-face {
   font-family: avenir;
   src: url('Avenir.ttc');
 }
+*/
 
 body.pop-theme {
 
