@@ -70,6 +70,10 @@ body.pop-theme a.lookatme:hover {
 body.pop-theme.view-tos {
   background-color: white;
 }
+/* Josh addtion */
+body.pop-theme.view-tos p {
+  font-size: 12px;
+}
 /* line 60, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme.view-home {
   background-color: #ade9fc;
