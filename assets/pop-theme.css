@@ -319,6 +319,17 @@ body.pop-theme section#welcome.no-js {
   background-color: #003663;
   color: white;
 }
+/* Josh fucking around */
+body.pop-theme section#welcome .focal-container h2 {
+  top: -3.2em;
+  line-height: 40px;
+}
+/* Josh fucking around some more */
+body.pop-theme section#welcome .focal-container h2 .sub-header-line-subdue {
+  font-size: 29px;
+  display: inline;
+  white-space: nowrap;
+}
 /* line 307, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#video .focal-container h2 {
   top: -3.2em;
