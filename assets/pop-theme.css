@@ -633,6 +633,10 @@ body.pop-theme .footer .container ul li {
     display: none;
   }
   /* Josh fucking around. */
+  body.pop-theme section#welcome .container h2 {
+    display: none;
+  }    
+  /* Josh fucking around. */
   body.pop-theme section#welcome .container h2 .sub-header-line-subdue {
     display: none;
   }  
