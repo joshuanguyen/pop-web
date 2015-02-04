@@ -667,6 +667,10 @@ body.pop-theme .footer .container ul li {
   body.pop-theme section#welcome .container h2 {
     top: -5.1em;
   }
+  /* Josh fucking around. */
+  body.pop-theme section#welcome .container h2 .sub-header-line-subdue {
+    display: none;
+  }
   /* line 667, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video {
     height: auto;
