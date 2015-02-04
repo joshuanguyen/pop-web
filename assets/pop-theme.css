@@ -633,6 +633,10 @@ body.pop-theme .footer .container ul li {
   body.pop-theme section#demo {
     display: none;
   }
+  /* Josh fucking around. */
+  body.pop-theme section#welcome .container h2 .sub-header-line-subdue {
+    display: none;
+  }  
 }
 @media (max-width: 480px) {
   /* line 632, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
