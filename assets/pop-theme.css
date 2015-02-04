@@ -484,7 +484,7 @@ body.pop-theme section#demo .container .row ol li:nth-child(3):before {
 body.pop-theme section#demo .iphone-demo-container {
   background-image: url("iphone5_covered.svg");
   background-size: 480px;
-  background-position: -126px;
+  background-position: -96px;
   background-repeat: no-repeat;
   height: 470px;
   width: 222px;
