@@ -325,7 +325,7 @@ body.pop-theme section#video .focal-container h2 {
   line-height: 40px;
 }
 /* line 311, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
-body.pop-theme section#video .focal-container h2 .sub-header-line-subdue {
+body.pop-theme section #welcome section#video .focal-container h2 .sub-header-line-subdue {
   font-size: 29px;
   display: inline;
   white-space: nowrap;
