@@ -663,7 +663,7 @@ body.pop-theme .footer .container ul li {
   /* line 671, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video .focal-container h2 {
     line-height: 24px;
-    top: 0em;
+    top: -4.5em;
   }
   /* line 674, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video .focal-container h2 .sub-header-line-subdue {
