@@ -71,7 +71,15 @@ body.pop-theme.view-tos {
   background-color: white;
   .container: 100%;
 }
+
+/* Josh addtion */
+body.pop-theme.view-tos p {
+  font-size: 12px;
+}
+/* line 60, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+=======
 /* line 62, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+
 body.pop-theme.view-home {
   background-color: #ade9fc;
 }
@@ -320,9 +328,25 @@ body.pop-theme section#welcome.no-js {
   background-color: #003663;
   color: white;
 }
-/* line 309, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
-body.pop-theme section#video .focal-container h2 {
+<<<<<<< HEAD
+/* Josh fucking around */
+body.pop-theme section#welcome .focal-container h2 {
   top: -3.2em;
+  line-height: 40px;
+}
+/* Josh fucking around some more */
+body.pop-theme section#welcome .focal-container h2 .sub-header-line-subdue {
+  font-size: 29px;
+  display: inline;
+  white-space: nowrap;
+}
+
+/* line 307, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+=======
+/* line 309, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+>>>>>>> master
+body.pop-theme section#video .focal-container h2 {
+  top: -3.1em;
   line-height: 40px;
 }
 /* line 313, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
@@ -419,7 +443,7 @@ body.pop-theme section#demo .container .bullet-container {
 }
 /* line 411, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row {
-  max-width: 940px;
+  max-width: 740px;
   margin: 0 auto;
 }
 /* line 416, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
@@ -433,16 +457,16 @@ body.pop-theme section#demo .container .row ol {
 body.pop-theme section#demo .container .row ol li {
   list-style-type: none;
   color: #a6e9fd;
-  margin-bottom: 118px;
+  margin-bottom: 85px;
 }
 /* line 429, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 body.pop-theme section#demo .container .row ol li span {
   display: inline-block;
   padding-left: 110px;
-  margin-top: 20px;
+  margin-top: 28px;
   font-weight: 600;
   display: block;
-  margin-top: -49px;
+  margin-top: -29px;
   font-size: 24px;
 }
 /* line 439, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
@@ -622,6 +646,14 @@ body.pop-theme .footer .container ul li {
   body.pop-theme section#demo {
     display: none;
   }
+  /* Josh fucking around. */
+  body.pop-theme section#welcome .container h2 {
+    display: none;
+  }  
+  /* Josh fucking around. */
+  body.pop-theme section#welcome .container h2 .sub-header-line-subdue {
+    display: none;
+  }  
 }
 @media (max-width: 480px) {
   /* line 634, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
@@ -655,7 +687,11 @@ body.pop-theme .footer .container ul li {
   }
   /* line 663, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#welcome .container h2 {
-    top: -5.1em;
+    top: -3em;
+  }
+  /* Josh fucking around. */
+  body.pop-theme section#welcome .container h2 .sub-header-line-subdue {
+    display: none;
   }
   /* line 669, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video {
