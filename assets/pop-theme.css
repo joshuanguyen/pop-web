@@ -71,7 +71,7 @@ body.pop-theme.view-tos {
   background-color: white;
   .container: 100%;
 }
-<<<<<<< HEAD
+
 /* Josh addtion */
 body.pop-theme.view-tos p {
   font-size: 12px;
@@ -79,7 +79,7 @@ body.pop-theme.view-tos p {
 /* line 60, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
 =======
 /* line 62, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
->>>>>>> master
+
 body.pop-theme.view-home {
   background-color: #ade9fc;
 }
