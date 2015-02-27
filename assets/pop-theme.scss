@@ -489,6 +489,63 @@ body.pop-theme {
       }
     }
 
+    &#humblebrag {
+
+      h2 {
+        padding-bottom:11px;
+      }
+
+      .media-logo-container {
+        div {
+          text-align: left;
+          height: 130px;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+          float: right;
+
+          img {
+            height:30px;
+            margin-top: 6px;
+          }
+
+          &.quote {
+            width:69%;
+          }
+
+          &.logo {
+            width:30%;
+          }
+
+          @media (max-width: 920px) {
+            float: none;
+            height: auto;
+            clear:both;
+            display:block;
+
+            img {
+              height:20px;
+              margin-top: 0;
+
+              &:nth-child(2) {
+                height:15px;
+              }
+            }
+
+            &.quote {
+              width:100%;
+            }
+
+            &.logo {
+              width:100%;
+              margin-bottom:20px;
+            }
+          }
+        }
+      }
+
+    }
+
     &#story {
 
       h2 {
