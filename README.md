@@ -19,4 +19,4 @@ After making changes
 
 Production
 ----------
-http://standardpixel.github.io/pop-web/
+http://joshuanguyen.github.io/pop-web/

@@ -1,0 +1,226 @@
+/* iPhone */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+
+	@font-face {
+	  font-family: avenir;
+	  src: url('Avenir.ttc');
+
+	body {
+		margin:0;
+		background-color: #00aeef;
+	}
+	
+	.overlay {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index:0;
+		text-align:center;
+	}
+
+	.overlay img {
+		width: 80px;
+		height: 80px;
+		margin:20px 0px 0px 0px;
+		text-align:center;		
+	}
+
+	#videowrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16.9 */
+		padding-top:25px;
+		height:0;
+		margin-top:25px;
+	}
+	
+	#videowrapper iframe {
+		position: absolute;
+		width:98%;
+		height:98%;
+		top: 0;
+		left: 4px;
+	}
+
+	#tagline {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index:0;
+		text-align:center;
+	}
+
+	#tagline p {
+		width:100%;
+		margin: 5px 0px 0px 0px;	
+		font-size:18px;
+		color:#FFFFFF;
+		font-weight:bold;
+	}
+
+	#tagline a {
+		text-decoration:none;
+		color:#08A3DE;
+		}
+
+	#footer {
+		width:100%;
+		margin: 68px 0px 0px 0px;	
+	}
+
+	#footer p {
+		font-family: "HelveticaNeue-Light" sans-serif;
+		font-size:9px;
+		color:#08A3DE;
+		text-align:center;
+	}
+	
+	#footer a {
+		color:#08A3DE;
+	}
+}
+
+/* iPad */
+
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	
+	@font-face {
+	  font-family: avenir;
+	  src: url('Avenir.ttc');
+
+	body {
+		margin:0;
+		background-color: #00aeef;
+	}
+	
+	.overlay {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index:0;
+		text-align:center;
+	}
+
+	.overlay img {
+		width: 160px;
+		height: 160px;
+		margin:20px 0px 0px 0px;
+		text-align:center;		
+	}
+
+	#videowrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16.9 */
+		padding-top:25px;
+		height:0;
+		margin-top:25px;
+	}
+	
+	#videowrapper iframe {
+		position: absolute;
+		width:98%;
+		height:98%;
+		top: 0;
+		left: 8px;
+	}
+	#tagline {
+		width: 100%;
+		height: 100%;
+		margin-top:-25px;
+		display: block;
+		text-align:center;
+	}
+	
+	#tagline p {
+		font-size:50px;
+		text-align:center;
+		color:#08A3DE;
+		font-weight:bold;
+	}
+	
+	#tagline a {
+		text-decoration:none;
+		color:#08A3DE;
+		}
+
+
+	#footer {
+		width:100%;
+		margin: 80px 0px 0px 0px;	
+	}
+
+	#footer p {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size:15px;
+		color:#08A3DE;
+		text-align:center;S
+	}
+	
+	#footer a {
+		color:#08A3DE;
+	}
+}
+
+
+/*Desktop*/
+@media only screen and (min-device-width: 1025px) {
+	  		
+	body {
+		margin:0;
+		background-color: #00aeef;
+	}
+		
+
+	.overlay {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index:0;
+		text-align:center;
+	}
+
+	.overlay img {
+		width: 150px;
+		height:150px;
+		margin: 40px 0px 0px 0px;	
+	}
+
+	#tagline {
+		width: 100%;
+		height: 100%;
+		margin-top:-60px;
+		display: block;
+		text-align:center;
+	}
+	
+	#tagline p {
+		font-size:50px;
+		text-align:center;
+		color:#FFFFFF;
+		font-weight:bold;
+	}
+	
+	#tagline a {
+		text-decoration:none;
+		color:#08A3DE;
+		}
+
+
+	#footer {
+		width:100%;
+		margin: 0px 0px 0px 0px;	
+	}
+
+	#footer p {
+		font-size:15px;
+		color:#FFF;
+		text-align:center;
+	}
+	
+	#footer a {
+		color:#FFF;
+	}
+}
+
+
+
