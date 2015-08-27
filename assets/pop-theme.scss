@@ -21,11 +21,12 @@ $shadow-opacity:.6;
   80% { -webkit-transform: translateY(-8px); opacity: .8; }
   100% { -webkit-transform: translateY(0); opacity: 1; }
 }
-
+/*
 @font-face {
   font-family: avenir;
   src: url('Avenir.ttc');
 }
+*/
 
 body.pop-theme {
 
@@ -88,6 +89,21 @@ body.pop-theme {
   &.focus-on-demo {
     background-color:rgba(58,171,249, 1);
     color:rgba(255, 255, 255, 1);
+
+    .navbar-default li {
+      background-color:rgb(254,250,41);
+      a {
+        color:rgb(52,158,235);
+      }
+      .apple-logo {
+        fill:rgb(247,189,40);
+      }
+    }
+  }
+
+  &.focus-on-humblebrag {
+    background-color:rgba(205,233,253,1);
+    color:rgba(0, 0, 0, 1);
 
     .navbar-default li {
       background-color:rgb(254,250,41);
@@ -486,6 +502,86 @@ body.pop-theme {
         background-color:#99e2ff;
         color:black;
       }
+    }
+
+    &#humblebrag {
+
+      height:100vh;
+
+      @media (max-width: 920px) {
+
+        padding-top:20%;
+      }
+
+      h2 {
+        padding-bottom:22px;
+        margin-top: 97px;
+
+        @media (max-width: 920px) {
+
+          display:none;
+        }
+      }
+
+      .media-logo-container {
+        div {
+          text-align: left;
+          height: 130px;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+          float: right;
+          padding:0 20px;
+
+          img {
+            height:30px;
+            margin-top: 6px;
+          }
+
+          &.quote {
+            width:69%;
+          }
+
+          &.logo {
+            width:30%;
+          }
+
+          @media (max-width: 920px) {
+            float: none;
+            height: auto;
+            clear:both;
+            display:block;
+            font-size:85%;
+
+            img {
+              height:20px;
+              margin-top: 0;
+
+              &:nth-child(2) {
+                height:15px;
+              }
+            }
+
+            &.quote {
+              width:100%;
+
+              &:nth-child(n+2) {
+                display:none;
+              }
+            }
+
+            &.logo {
+              width:100%;
+              margin-bottom:20px;
+
+              &:nth-child(n+3) {
+                display:none;
+              }
+            }
+          }
+        }
+      }
+
     }
 
     &#story {
