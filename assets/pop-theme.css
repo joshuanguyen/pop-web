@@ -694,14 +694,9 @@ body.pop-theme .footer .container ul li {
 }
 @media (max-width: 480px) {
   /* line 704, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
-  body.pop-theme h1, body.pop-theme h2, body.pop-theme h3, body.pop-theme h4 {
+  body.pop-theme h1, body.pop-theme h2  {
     font-size: 24px;
     line-height: 28px;
-  }
-  /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
- body.pop-theme h3, body.pop-theme h4 {
-    font-size: 18px;
-    line-height: 21px;
   }
   /* line 708, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme h1 span.sub-header-line, body.pop-theme h2 span.sub-header-line, body.pop-theme h3 span.sub-header-line, body.pop-theme h4 span.sub-header-line {
@@ -729,7 +724,7 @@ body.pop-theme .footer .container ul li {
   }
   /* line 733, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#welcome .container h2 {
-    top: -5.1em;
+    top-margin: 10px;
   }
   /* line 739, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video {
@@ -766,16 +761,20 @@ body.pop-theme .footer .container ul li {
   }
   /* NEW-Josh /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div img {
-    height: 15px;
+    height: 10px;
     margin-top: 6px;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.quote {
-    width: 89%;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    display: block;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.logo {
-    width: 10%;
+    width: 50%;
   }
   /* line 778, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer {
