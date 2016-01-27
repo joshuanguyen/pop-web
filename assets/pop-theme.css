@@ -766,16 +766,16 @@ body.pop-theme .footer .container ul li {
   }
   /* NEW-Josh /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div img {
-    height: 20px;
+    height: 15px;
     margin-top: 6px;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.quote {
-    width: 79%;
+    width: 89%;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.logo {
-    width: 20%;
+    width: 10%;
   }
   /* line 778, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer {
