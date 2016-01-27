@@ -761,12 +761,12 @@ body.pop-theme .footer .container ul li {
   }
   /* NEW-Josh /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div img {
-    height: 25px;
+    height: 12px;
     margin-top: 6px;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.quote {
-    width: 89%;
+    width: 95%;
     font-size: 18px;
     line-height: 21px;
     font-weight: normal;
