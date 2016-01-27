@@ -759,6 +759,11 @@ body.pop-theme .footer .container ul li {
     top: 23px;
     left: 21px;
   }
+  /* NEW-Josh /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  body.pop-theme section#humblebrag .media-logo-container div img {
+    height: 20px;
+    margin-top: 6px;
+  }
   /* line 778, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer {
     height: auto;
