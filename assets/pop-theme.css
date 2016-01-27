@@ -167,7 +167,7 @@ body.pop-theme .navbar-default li {
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.6);
   line-height: 15px;
   position: relative;
-  padding: 14px 15px 14px 76px;
+  padding: 14px 15px 14px 35px;
   transition: box-shadow .2s, background-color 1s, color 1s, opacity .2s;
 }
 /* line 158, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
