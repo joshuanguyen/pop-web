@@ -761,12 +761,12 @@ body.pop-theme .footer .container ul li {
   }
   /* NEW-Josh /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div img {
-    height: 12px;
+    height: 10px;
     margin-top: 6px;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.quote {
-    width: 95%;
+    width: 100%;
     font-size: 18px;
     line-height: 21px;
     font-weight: normal;
@@ -774,7 +774,7 @@ body.pop-theme .footer .container ul li {
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#humblebrag .media-logo-container div.logo {
-    width: 10%;
+    width: 50%;
   }
   /* line 778, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme .footer {
