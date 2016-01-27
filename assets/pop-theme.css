@@ -699,9 +699,11 @@ body.pop-theme .footer .container ul li {
     line-height: 28px;
   }
   /* NEW-Josh, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
- body.pop-theme h3, body.pop-theme h4 {
+ body.pop-theme h3, body.pop-theme h4, body.pop-theme p{
     font-size: 18px;
     line-height: 21px;
+    font-weight: normal;
+    display: block;
   }
   /* line 708, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme h1 span.sub-header-line, body.pop-theme h2 span.sub-header-line, body.pop-theme h3 span.sub-header-line, body.pop-theme h4 span.sub-header-line {
