@@ -724,7 +724,7 @@ body.pop-theme .footer .container ul li {
   }
   /* line 733, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#welcome .container h2 {
-    top: -5.1em;
+    top-margin: 10px;
   }
   /* line 739, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme section#video {
