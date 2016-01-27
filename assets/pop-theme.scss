@@ -506,26 +506,9 @@ body.pop-theme {
 
     &#humblebrag {
 
-      height:100vh;
-
-      @media (max-width: 920px) {
-
-        padding-top:20%;
-      }
-
       h2 {
-<<<<<<< HEAD
 		padding-top:22px;
 		padding-bottom:11px;
-=======
-        padding-bottom:22px;
-        margin-top: 97px;
-
-        @media (max-width: 920px) {
-
-          display:none;
-        }
->>>>>>> origin/gh-pages
       }
 
       .media-logo-container {
@@ -536,7 +519,6 @@ body.pop-theme {
           display: inline-block;
           vertical-align: top;
           float: right;
-          padding:0 20px;
 
           img {
             height:30px;
@@ -556,7 +538,6 @@ body.pop-theme {
             height: auto;
             clear:both;
             display:block;
-            font-size:85%;
 
             img {
               height:20px;
@@ -569,19 +550,11 @@ body.pop-theme {
 
             &.quote {
               width:100%;
-
-              &:nth-child(n+2) {
-                display:none;
-              }
             }
 
             &.logo {
               width:100%;
               margin-bottom:20px;
-
-              &:nth-child(n+3) {
-                display:none;
-              }
             }
           }
         }
