@@ -693,6 +693,11 @@ body.pop-theme .footer .container ul li {
   }
 }
 @media (max-width: 480px) {
+  /* line 704, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
+  body.pop-theme h1, body.pop-theme h2  {
+    font-size: 24px;
+    line-height: 28px;
+  }
   /* line 708, /Users/eric/workspace/pop-web/assets/pop-theme.scss */
   body.pop-theme h1 span.sub-header-line, body.pop-theme h2 span.sub-header-line, body.pop-theme h3 span.sub-header-line, body.pop-theme h4 span.sub-header-line {
     display: inline;
